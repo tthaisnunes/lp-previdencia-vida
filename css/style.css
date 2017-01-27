@@ -1,0 +1,267 @@
+/*****css reset****/
+
+body {
+	margin: 0;
+	padding: 0;  
+}
+
+img {
+	max-width: 100%;
+}
+
+.no-margin {
+	margin-bottom: 0;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.no-padding {
+	padding-bottom: 0;
+	padding-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/****theme config******/
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bmc-ctt a:hover {
+	color: white !important;
+}
+
+.btn-default {
+	width:338px;
+	background: #00aeef;
+	color: white;
+	padding: 15px 30px;
+	font-weight: 400;
+	text-transform: uppercase;
+	font-size: 15px;
+	text-decoration: none;
+	display: block;
+	margin: 0 auto;
+	transition-duration: 0.5s;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+.btn-default img {
+	margin-right: 8px;
+	float: left;
+}
+
+.btn-default:hover, 
+.btn-default:focus, 
+.btn-default:active   {
+	color: #fff;
+	background-color: #009fe3;
+	text-decoration: none;
+}
+
+/****** why-purchase and .how-it-works ******/
+
+.why-purchase h3,
+.how-it-works h3,
+.investment h3 {
+	color: #122f4d;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.why-purchase h3,
+.how-it-works h3,
+.why-purchase p,
+.how-it-works p,
+.padding-left{
+	padding-left: 2.5%;
+	max-width: 95%;
+}
+
+.why-purchase p,
+.how-it-works p,
+.investment p {
+	font-size: 16px;
+	color: #797979;
+	margin-bottom: 40px;
+}
+
+.reason p {
+	font-size: 21px;
+	color:#797979;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.why-purchase img {
+	width: 65px;
+	display: block;
+	margin: 0 auto;
+}
+
+.how-it-works h3 {
+	margin-top: 45px;
+}
+
+.how-it-works img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
+
+
+/***** .investment *****/
+.investment {
+	-webkit-box-shadow: inset -5px 10px 17px -1px rgb(239, 239, 239);
+	-moz-box-shadow: inset -5px 10px 17px -1px rgb(239, 239, 239);
+	box-shadow: inset -5px 10px 17px -1px rgb(239, 239, 239);
+	border-top: solid 1px #d6d6d6;
+}
+
+.investment h3 {
+	margin-top: 70px;
+}
+
+.investment .item img {
+	display: block;
+	margin: 0 auto;
+}
+
+.investment .item h4 {
+	color:#8c0668;
+	font-size: 21px;
+	text-align: center;
+	margin-top: 20px;
+	line-height: 30px;
+}
+
+.investment .item p {
+	font-size: 12px;
+	color: #9e9f9f;
+	text-align: center;
+}
+
+/****** .content-bottom *******/
+
+.content-bottom {
+	margin-top: 100px;
+}
+
+.content-bottom h4{
+	font-size: 35px;
+	color:#122f4d;
+	font-weight: bold;
+}
+
+.content-bottom p {
+	font-size: 20px;
+	color: #797979;
+}
+
+.content-bottom .btn-default {
+	margin: 0 
+}
+
+
+/****** footer ******/
+
+footer {
+	min-height: 150px;
+}
+
+.lp-colophon small {
+	display: block;
+	font-size: 9px;
+	padding: 0 7px;
+}
+
+.contact {
+	margin-bottom: 20px;
+	width: 100%;
+	background: #122f4d;
+	height: 2px;
+	display: block;
+	line-height: 2px;
+	font-size: 2px;
+}
+
+/****** Modal ******/
+
+.modal-title {
+	margin: 0;
+	line-height: 1.42857143;
+	font-size: 21px;
+	font-weight: bold;
+	color: #122f4d;
+	padding: 30px 30px 10px;
+}
+
+.modal-header {
+	border-bottom: none;
+}
+
+.modal li span {
+	display: block;
+	font-size: 13px;
+	font-weight: bold;
+	color: #122f4d;
+}
+
+.modal ul li {
+	list-style: none;
+}
+
+.modal li {
+	font-size: 14px;
+	color: #797979;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+
+.modal-body {
+	padding-right: 30px;
+}
+
+.modal-dialog {
+	margin: 30px auto 100px;
+}
+
+@media (min-width: 768px){
+	.modal-dialog {
+		width: 800px;
+	}
+}
+
+/******* responsive ******/
+@media screen and (max-width:480px){
+	.btn-default {
+		width:100%;
+	}
+	.content-bottom{
+		margin-top:0px;
+		text-align:center;
+	}
+	.content-bottom .btn-default{
+		margin-bottom:30px;
+	}
+	footer {
+		min-height: 280px;
+	}
+	.investment h3, .content-bottom h4{
+		margin-top:40px;
+		font-size:24px;
+	}
+	.content-bottom h4{
+		margin-top:0px;
+		padding-top:14px;
+		border-top:2px solid #122f4d;
+	}
+	.why-purchase h3, .how-it-works h3, .why-purchase p, .how-it-works p, .padding-left{
+		padding-left:0;
+		max-width:100%;
+		text-align:center;
+	}
+}
